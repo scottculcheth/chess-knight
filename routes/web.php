@@ -14,3 +14,6 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/df', 'ChessController@depthFirstKnight');
+$router->get('/bf', 'ChessController@breadthFirstKnight');
